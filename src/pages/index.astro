@@ -62,7 +62,7 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
     </div>
   </section>
   <section class="flex flex-col gap-y-4">
-    <h2 class="text-2xl font-medium">Latest posts</h2>
+    <h2 class="text-2xl font-medium">Posts les plus récents</h2>
     <ul class="flex flex-col gap-y-4">
       {
         blog.map((post) => (
@@ -77,7 +77,7 @@ const blog = await getRecentPosts(SITE.featuredPostCount)
         href="/blog"
         class={buttonVariants({ variant: 'ghost' }) + ' group'}
       >
-        See all posts <span
+        Voir tous les posts <span
           class="ml-1.5 transition-transform group-hover:translate-x-1"
           >&rarr;</span
         >
