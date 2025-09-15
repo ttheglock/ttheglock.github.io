@@ -11,8 +11,28 @@ draft: false
 import Callout from '@/components/Callout.astro'
 import { Icon } from 'astro-icon/components'
 
-## KernelSU Next & LineageOS (Redmi Note 10 Pro)
+Ce post fera office de tutoriel d'installation de [KernelSU Next](https://kernelsu-next.github.io/webpage/) pour [LineageOS](https://lineageos.org/) sur un Xiaomi Redmi Note 10 Pro (noyau non-GKI).
 
-<Callout variant="note">
-  Ce post est en cours de rédaction.
-</Callout>
+---
+
+## 1. Introduction
+
+### 1.1. KernelSU Next
+
+[**KernelSU Next**](https://kernelsu-next.github.io/webpage/), ou plus communément appelée **KSU Next** ou **KSUN**, est une solution root basée sur le noyau (*kernel-based*) pour les appareils Android possédant des noyaux :
+- [GKI](https://source.android.com/docs/core/architecture/kernel/generic-kernel-image?hl=fr), avec les noyaux Android :
+    - 5.10 - 6.6,
+    - supérieurs à 6.6 en version expérimentale
+- non-GKI, avec les noyaux Android :
+    - 4.X à 5.4 en version LTS (Long Term Support),
+    - 3.X en version expérimentale
+
+Cette solution root est basée sur une autre solution
+
+**KernelSU Next** est un "fork", c'est-à-dire un logiciel créé à partir du code source d’un logiciel existant.
+Celui-ci reprend en effet le même code source que **KernelSU**, qui est une solution root pour les appareils Android GKI fonctionnant en mode noyau et accorde des permissions root aux applications de l'espace utilisateur directement dans l'espace noyau.
+
+### 1.2. LineageOS
+
+[**LineageOS**](https://lineageos.org/) (aussi stylisé **Lineage OS**, ou connu comme **Lineage OS Android Distribution**) est un système d'exploitation open source pour smartphones et tablettes, basé sur Android.
+L'installation de LineageOS sur un Redmi Note 10 Pro ne sera pas abordée dans ce post. Si besoin, se référer à [ce lien](https://wiki.lineageos.org/devices/sweet/variant1/).
